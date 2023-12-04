@@ -49,6 +49,18 @@ router.get("/category/:catName", async(req,res)=>{
     res.status(500).json({msg:"there error try again later",err})
   }    
 })
+// router.get("/prices/", async(req,res)=>{
+//   try{
+//     let paramC = req.params.catName;
+//     let data = await ToyModel.find({category:paramC})
+//     .limit(50)
+//     res.json(data);
+//   }
+//   catch(err){
+//     console.log(err);
+//     res.status(500).json({msg:"there error try again later",err})
+//   }    
+// })
 
 router.post("/", auth,async(req,res) => {
   let validBody = validateToys(req.body);
