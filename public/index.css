@@ -1,0 +1,92 @@
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: larger;
+}
+.container-fluid
+{width: 100%;
+color: #1640D6;
+}
+.container{
+   width: 80%;
+   text-align: center;
+}
+header{
+    color: #1640D6;
+     
+}
+main{
+   font-family: 'Roboto Flex', sans-serif; 
+   text-align: left;
+
+}
+.container1{
+    background: #ED5AB3;
+}
+ .table1{
+    border:2px  1640D6 solid;
+    background: #e981bf;
+    color:white;
+    height: 700px;
+    padding: 20px;
+  }
+  .container2{
+    background: #1640D6;
+}
+ .table2{
+    border:2px  1640D6 solid;
+    background: #5773d5;
+    color:white;
+    height: 700px;
+    padding: 20px;
+  }
+
+
+.pre{
+  background-color: aliceblue;  
+}
+/*  main .topPic {
+    min-height: 300px;
+    border-radius: 32px;
+    background-image: url(pexels-tim-mossholder-3643925.jpg);
+    font-family: "Pattaya", sans-serif;
+    box-shadow: 0px 10px 22px 0px #000000;
+    background-position: center;
+    background-size: cover;
+  }
+  
+    .bigDomain{
+      font-size: 1.8em;
+      font-family: 'Bebas Neue', sans-serif;
+  
+    }
+    
+  nav .myScale{
+    display: inline-block;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    margin: 8px;
+    text-decoration: none;
+    color: black;
+    transition: 1000ms;
+  }
+  
+  nav .myScale:hover{
+    transform: scale(1.2);
+    letter-spacing: 2px;
+    color: black;
+  }
+  
+  .text1{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+  }
+  
+  .copyBtn{
+    transition: 1000ms;
+  }
+  
+  .copyBtn:hover{
+    transform: scale(1.2);
+    color: blue;
+  } */

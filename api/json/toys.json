@@ -1,0 +1,72 @@
+[
+    {
+      "name": "Fish Game Doll",
+      "info": "Fish,Doll",
+      "category": "Doll",
+      "img_url": "Fish.jpg",
+      "price": 25
+    },
+    {
+      "name": "Toy Car",
+      "info": "Car,Toy",
+      "category": "Car",
+      "img_url": "Car.jpg",
+      "price": 20
+    },
+    {
+      "name": "Teddy Bear",
+      "info": "Bear,Stuffed Animal",
+      "category": "Stuffed Animal",
+      "img_url": "TeddyBear.jpg",
+      "price": 15
+    },
+    {
+      "name": "Puzzle",
+      "info": "Puzzle,Game",
+      "category": "Game",
+      "img_url": "Puzzle.jpg",
+      "price": 10
+    },
+    {
+      "name": "Barbie Doll",
+      "info": "Doll,Barbie",
+      "category": "Doll",
+      "img_url": "Barbie.jpg",
+      "price": 30
+    },
+    {
+      "name": "Action Figure",
+      "info": "Action Figure,Toy",
+      "category": "Toy",
+      "img_url": "ActionFigure.jpg",
+      "price": 25
+    },
+    {
+      "name": "Building Blocks",
+      "info": "Blocks,Toy",
+      "category": "Toy",
+      "img_url": "Blocks.jpg",
+      "price": 15
+    },
+    {
+      "name": "Stuffed Dog",
+      "info": "Dog,Stuffed Animal",
+      "category": "Stuffed Animal",
+      "img_url": "StuffedDog.jpg",
+      "price": 20
+    },
+    {
+      "name": "Remote Control Helicopter",
+      "info": "Helicopter,Remote Control,Toy",
+      "category": "Toy",
+      "img_url": "Helicopter.jpg",
+      "price": 30
+    },
+    {
+      "name": "Dress-Up Kit",
+      "info": "Dress-Up,Kit,Toy",
+      "category": "Toy",
+      "img_url": "DressUp.jpg",
+      "price": 15
+    }
+]

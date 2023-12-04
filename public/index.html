@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:wght@100&display=swap"
+        rel="stylesheet">
+    <!-- boodstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- css only -->
+    <link rel="stylesheet" href="index.css">
+
+    <title>TOYS API</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="container-fluid p-5">
+        <div class="txt container">
+            <h1>TOYS API</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corrupti alias modi sed consequatur
+                explicabo tenetur nam architecto suscipit sunt quos magni natus, ex voluptate! Officiis commodi impedit
+                natus numquam laborum ipsam voluptatum amet est perferendis quam rem cupiditate, iste nostrum nemo
+                reiciendis ab exercitationem, facere similique at atque enim!
+                <a class="nav-link active myScale" href="#user_id">Users</a>
+                <a class="nav-link active myScale" href="#toy_id">Toys</a>
+            </h2>
+        </div>
+
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <!-- <main class="container-fluid pb-4">
+        <div class="container1 container-fluid">
+            <div class="container table-responsive id_users ">
+                <h4 class="mb-3 ">
+                    USERS
+                    <span class=" text fw-bold" id="Domain">https://api-toys.cyclic.app</span>
+                    <button class="btn mx-2 copyBtn" id="domainbtn"><i class="bi bi-files"></i></button>
+                </h4>
+                <table class="table1 table-bordered  p-5 m-5">
+
+                    <thead>
+                        <tr>
+                            <th class="text-center" scope="col">#Method</th>
+                            <th class="text-center" scope="col">URL</th>
+                            <th class="text-center" scope="col">Body</th>
+                            <th class="text-center" scope="col">Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>GET</td>
+                            <td><a href="/users/myInfo">/users/myInfo</a></td>
+                            <td>none</td>
+                            <td>Get your own info - by token.</td>
+                        </tr>
+                        <tr>
+                            <td>GET</td>
+                            <td><a href="/users/usersList">/users/usersList</a></td>
+                            <td>none</td>
+                            <td>Get list of all users - by token admin.</td>
+                        </tr>
+                        <tr>
+                            <td>POST</td>
+                            <td>/users</td>
+                            <td class="text-left">
+                                <pre class="text-start">
+    { 
+    fullName: {
+    firstName: Shira,
+    lastName: Aviram
+    },
+    "email": "s214124307@gmail.com",
+    "password": "shira214124"
+    } </pre>
+                            </td>
+                            <td>Add a new user to the data base ,<a class="text-decoration-none"
+                                    href="https://github.com/MaorgD/ToysProject/blob/main/api/validation/userValidation.js">if
+                                    you want to see the template of valid user.</a></td>
+                        </tr>
+                        <tr>
+                            <td>POST (login)</td>
+                            <td>/users/login</td>
+                            <td>
+                                <pre class="text-start">
+    {
+        "email": "s214124307@gmail.com",
+        "password": "shira214124"
+    } </pre>
+                            </td>
+                            <td>User login, if the email and password are correct the server will respond with a
+                                token,<br>
+                                <a class="text-decoration-none"
+                                    href="https://github.com/MaorgD/ToysProject/blob/main/api/validation/userValidation.js">if
+                                    you want to see the template of valid user.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DELETE</td>
+                            <td>/users/{idDel}</td>
+                            <td>none</td>
+                            <td>Delete a user from the data base. <strong> Admin token can delete every user , and user
+                                    can
+                                    delete only himself.</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PUT</td>
+                            <td>/users/{idEdit}</td>
+                            <td>
+                                <pre class="text-start">
+                                    { 
+                                        fullName: {
+                                        firstName: Shira,
+                                        lastName: Aviram
+                                        },
+                                        "email": "s214124307@gmail.com",
+                                        "password": "shira214124"
+                                        } </pre>
+                                                  
+                            </td>
+                            <td>Update your user in the data base,<strong> Admin token can edit every user data , and
+                                    user
+                                    can
+                                    edit only himself.</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam omnis blanditiis molestias sapiente
+                repellat, ut id alias inventore numquam dolore laudantium asperiores iusto? Cupiditate eum pariatur
+                facere rerum minima ipsa rem placeat quisquam. Quidem aliquid amet earum! Consectetur quam minima non
+                dicta ratione optio impedit possimus! Officia deserunt eius voluptatibus.</p>
+        </div>
+        <div class="container">
+            <div class="row mb-4">
+                <p class="text-center text1">Some <b>"GET"</b> requests you can get information about the API,
+                    By adding these <b>queries</b> you can see the edit</p>
+                <ul>
+                    <li><strong>Per-Page :</strong> you can select the amount of obj per one page.</li>
+                    <li><strong>Page :</strong> you can select the num of pages you want.</li>
+                    <li><strong>Sort :</strong> you can select how to make your sort - by Price / ID / Name / Cat. </li>
+                    <li><strong>Reverse :</strong> you can choose the sort dirction.</li>
+                </ul>
+            </div>
+        </div>
+
+        <main class="container-fluid pb-4">
+            <div class="container2 container-fluid">
+                <div class="container table-responsive id_toys ">
+                    <h4 class="mb-3 ">
+                        TOYS
+                        <span class=" text-light fw-bold" id="Domain">https://api-toys.cyclic.app</span>
+                        <button class="btn mx-2 copyBtn" id="domainbtn"><i class="bi bi-files"></i></button>
+                    </h4>
+                    <table class="table2 table-bordered  p-5 m-5">
+
+                        <thead class="table-dark">
+                            <tr>
+                                <th class="text-center" scope="col">#Method</th>
+                                <th class="text-center" scope="col">URL</th>
+                                <th class="text-center" scope="col">Body</th>
+                                <th class="text-center" scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>GET</td>
+                                <td><a href="https://api-toys.cyclic.app//toys">/toys</a></td>
+                                <td class="text-center">none</td>
+                                <td>Get a list of all the toys, will present 10 results per page.</td>
+                            </tr>
+                            <tr>
+                                <td>GET</td>
+                                <td><a href="https://api-toys.cyclic.app/toys/search?s=doll">/toys/search?s=doll</a>
+                                </td>
+                                <td class="text-center">none</td>
+                                <td>search for a toy by searching follwing name or info after the "s=", it will present
+                                    10
+                                    results per page.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GET</td>
+                                <td><a
+                                        href="https://api-toys.cyclic.app/toys/prices?min=50&max=200">/toys/prices?min=50&max=200</a>
+                                </td>
+                                <td class="text-center">none</td>
+                                <td>Get a list of the toys by min & max , it will present 10 results per page.</td>
+                            </tr>
+                            <tr>
+                                <td>GET</td>
+                                <td><a href="https://api-toys.cyclic.app/toys/category/doll">/toys/category/:catName</a>
+                                </td>
+                                <td class="text-center">none</td>
+                                <td>Get a list of all the toys in toys <strong>category</strong>, it will present 10
+                                    results per
+                                    page.</td>
+                            </tr>
+                            <tr>
+                                <td>POST</td>
+                                <td>/toys</td>
+                                <td>
+                                    <pre>
+
+                                        {
+                                            "name": "Wooden Train Set",
+                                               "info": "Train Set,Wooden,Toy",
+                                               "category": "Toy",
+                                               "img_url": "TrainSet.jpg",
+                                               "price": 40
+                                           }
+                                        
+                                      
+           </pre>
+                                </td>
+                                <td>Add a new toy to the data base, <strong>You need a token for this query
+                                        ,</strong><br>
+                                    <a class="text-decoration-none"
+                                        href="https://github.com/MaorgD/ToysProject/blob/main/api/validation/toyValidation.js">if
+                                        you want to see the template of valid toy</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PUT</td>
+                                <td>/toys/ID </td>
+                                <td>
+                                    <pre>
+                                        {
+                                            "name": "Wooden Train Set",
+                                               "info": "Train Set,Wooden,Toy",
+                                               "category": "Toy",
+                                               "img_url": "TrainSet.jpg",
+                                               "price": 40
+                                           }
+           </pre>
+                                </td>
+                                <td>Update a toy in the data base,<strong>You need a token for this query.</strong></td>
+                            </tr>
+                            <tr>
+                                <td>DELETE</td>
+                                <td>/toys/ID</td>
+                                <td class="text-center">none</td>
+                                <td>Delete a toy from the data base, <strong>You need a token for this query.</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+        </main> -->
+        <!-- main end -->
+
+        <!-- footer start -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-4">
+            <div class="col-md-4 d-flex align-items-center ms-4">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">© 2023 , Shira Aviram Pro</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5">
+                <li class="ms-3"><a class="text-muted" href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i>
+                    </a></li>
+                <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i>
+                    </a></li>
+                <li class="ms-3"><a class="text-muted" href="https://github.com/MaorgD/ToysProject "><i
+                            class="bi bi-github"></i>
+                    </a></li>
+            </ul>
+        </footer>
+        <!-- footer end -->
+
+        <!-- js connect -->
+        <script src="index.js"></script>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

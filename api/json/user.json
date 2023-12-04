@@ -1,0 +1,50 @@
+[
+    {
+      "fullName": {
+        "firstName": "Maor",
+        "lastName": "Gabay"
+      },
+      "email": "MaorGabay@gabay.com",
+      "password": "Maor31kd3Fg8"
+    },
+    {
+      "fullName": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "email": "johndoe@example.com",
+      "password": "Password123"
+    },
+    {
+      "fullName": {
+        "firstName": "Jane",
+        "lastName": "Smith"
+      },
+      "email": "janesmith@example.com",
+      "password": "Pa55w0rd"
+    },
+    {
+      "fullName": {
+        "firstName": "David",
+        "lastName": "Johnson"
+      },
+      "email": "davidjohnson@example.com",
+      "password": "SecurePassword123"
+    },
+    {
+      "fullName": {
+        "firstName": "Sarah",
+        "lastName": "Williams"
+      },
+      "email": "sarahwilliams@example.com",
+      "password": "SecretPassword"
+    },
+    {
+      "fullName": {
+        "firstName": "Michael",
+        "lastName": "Brown"
+      },
+      "email": "michaelbrown@example.com",
+      "password": "StrongPassword123"
+    }
+  ]
